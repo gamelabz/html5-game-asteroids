@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asteroids</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>☄️ Asteroids</h1>
+      <p class="tagline">Blast the drifting asteroids and survive the field.</p>
+    </header>
+
+    <section class="hud" aria-label="Game statistics">
+      <div class="stat"><span class="stat-label">Score</span><span class="stat-value" id="score">0</span></div>
+      <div class="stat"><span class="stat-label">Lives</span><span class="stat-value" id="lives">3</span></div>
+      <div class="stat"><span class="stat-label">Wave</span><span class="stat-value" id="wave">1</span></div>
+    </section>
+
+    <div class="stage">
+      <canvas id="game" width="600" height="600"></canvas>
+      <p class="message" id="message">Rotate: ←/→ · Thrust: ↑ · Fire: Space · Hyperspace: Shift</p>
+    </div>
+
+    <footer class="controls">
+      <button class="btn" id="start">Start</button>
+      <button class="btn" id="restart">Restart</button>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
